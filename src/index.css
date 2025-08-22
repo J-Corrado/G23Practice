@@ -1,0 +1,141 @@
+.answer-timer-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #9c9c9c
+}
+
+.answer-timer-container .progress {
+    height: 5px;
+    transition-duration: .1s;
+    width: 0;
+    transition-timing-function: linear
+}
+
+.quiz-container {
+    width: 750px;
+    background: #ffffff;
+    border-radius: 4px;
+    margin-top: 100px;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    position: relative;
+    white-space: pre-line;
+}
+
+.quiz-container .active-question-no {
+    font-size: 32px;
+    font-weight: 500;
+    color: #150080
+}
+
+.quiz-container .total-question {
+    font-size: 16px;
+    font-weight: 500;
+    color: #9c9c9c
+}
+
+.quiz-container h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0
+}
+
+.quiz-container ul {
+    margin-top: 20px;
+    margin-left: -40px
+}
+
+.quiz-container ul li {
+    text-decoration: none;
+    list-style: none;
+    color: #2d264b;
+    font-size: 16px;
+    background: #ffffff;
+    border: 1px solid #9c9c9c;
+    border-radius: 16px;
+    padding: 11px;
+    margin-top: 15px;
+    cursor: pointer
+}
+
+.quiz-container ul .selected-answer {
+    background: #150080;
+    border: 1px solid #d08642;
+    color: #fff
+}
+
+.quiz-container .footer {
+    display: flex;
+    justify-content: flex-end
+}
+
+.quiz-container button {
+    background: linear-gradient(0deg,#150080 .03%,#d08642);
+    border-radius: 9px;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 42px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer
+}
+
+.quiz-container button:disabled {
+    background: #e7e8e9;
+    color: #9c9c9c;
+    cursor: not-allowed
+}
+
+.quiz-container input {
+    border: 1px solid #9c9c9c;
+    border-radius: 4px;
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box
+}
+
+.result {
+    text-align: center
+}
+
+.result h3 {
+    font-size: 24px;
+    letter-spacing: 1.4px;
+    text-align: center
+}
+
+.result p {
+    font-size: 16px;
+    font-weight: 500
+}
+
+.result p span {
+    color: #150080;
+    font-size: 22px
+}
+
+.result table {
+    width: 50%;
+    text-align: left;
+    margin: 50px auto 20px;
+    border-collapse: collapse
+}
+
+.result table tr {
+    border: 1px solid
+}
+
+body {
+    font-family: monospace;
+    background: linear-gradient(0deg,#150080 .03%,#d08642);
+    color: #2d264b;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 30px;
+    height: 100vh
+}
